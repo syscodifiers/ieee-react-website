@@ -1,0 +1,528 @@
+body{
+    overflow-x: hidden !important;
+}
+
+.noNav{
+    display: none;
+}
+
+hr.style-one {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+p{
+    text-align: justify;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.modalCloseBtn{
+    color: #01000a;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: #ffffff solid 2px;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.moreGalleryBtn,
+.morePeopleBtn {
+    background-color: #ffffff;
+    border: indigo solid 2px;
+    border-radius: 25px;
+    color: #290047;
+    padding: 10px 32px;
+    font-size: 16px;
+}
+
+.moreGalleryBtn:hover,
+.morePeopleBtn:hover{
+    color: #EEEEEE;
+    background-color: indigo;
+}
+
+.counterDiv{
+    text-align: center;
+}
+
+.custMenu {
+    text-align: center;
+    color: #1f1f1f;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.custMenu:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 0; /* Change this to whatever width you want to have before hover. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 5px solid #FE4365; /* This creates the border. Replace black with whatever color you want. */
+    transition: .5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+}
+
+.custMenu:hover:after {
+    width: 100%;
+}
+
+.developer{
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.developerDiv{
+    background: #1f1f1f;
+    color: #EEEEEE;
+}
+
+@media screen and (min-width: 600px) {
+    .ieeelogo{
+        margin: 3vh 3vh 3vh 5vw;
+    }
+    .gectlogo{
+        margin-left: 25vw;
+        margin-top: 5vh;
+        width: 100px;
+        height: 100px;
+    }
+    .ReadmoreAboutDiv{
+        text-align: right;
+        margin-right: 25vw;
+        margin-top: 0vh;
+    }
+    .aboutText{
+        line-height: 1.15;
+        text-align: justify;
+        margin: 100px 0px 50px 45vw;
+    }
+
+    .aboutIllustration {
+        position: absolute;
+        height: 70%;
+        width: 70%;
+    }
+
+    .archStyles {
+        height: 130%;
+        width: 65%;
+        margin: 0px 0px -500px 37vw;
+    }
+    /* .logoIllustration{
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+        margin-left: -18vw;
+        margin-top: -20vh;
+    } */
+    .logoIllustration{
+        width: 110%;
+        height: 100%;
+        z-index: -1;
+        margin-left: 18vw;
+        margin-top: 0vh;
+    }
+    .counterDiv{
+        margin: 35vh 0 2vh 1vw ;
+    }
+    .aboutDiv{
+        margin-top: 45vh;
+    }
+    .awardDiv{
+        margin-top: 0vh;
+    }
+    .peopleIllustration{
+        position: absolute;
+        float: right;
+        margin-left: 40%;
+        /*margin-top: -25vh;*/
+        margin-bottom: 2vh;
+        height: 80%;
+        width: 80%;
+        z-index: -1;
+    }
+    .person{
+        text-align: center;
+        margin-left: 10vw;
+    }
+    .morePeopleBtn {
+        position: absolute;
+        margin-left: 42vw;
+        margin-top: 20px;
+    }
+    /*Awards Text Left*/
+    .awardsText-tl {
+        width: 50%;
+        margin-top: 8vh;
+        margin-left: 5vw;
+    }
+    .awardsIllustration-tl {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        margin-top: 10vh;
+        margin-left: 50vw;
+    }
+    /*Awards Text Right*/
+    .awardsText-tr {
+        position: absolute;
+        height: 50%;
+        width: 50%;
+        margin-top: 35vh;
+        margin-left: 50vw;
+    }
+    .awardsIllustration-tr {
+        width: 45%;
+        height: 50%;
+    }
+    .acitivityIllustration{
+        position: absolute;
+        z-index: -1;
+        width: 40%;
+        height: 40%;
+        margin-top: -4vh;
+    }
+    .activityContainer{
+        margin-top: 10vh;
+    }
+    .galleryImage{
+        margin: 10px;
+    }
+    .sectionHeading{
+        margin: 5vh 0 5vh -10vw;
+    }
+    .moreGalleryBtn{
+        margin-left: 0vw;
+        margin-top: 10vh;
+    }
+    .contactudDiv{
+        margin-top: 25vh;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ieeelogo{
+        margin: 0vh;
+    }
+    .gectlogo{
+        margin-left: 70vw;
+        margin-top: 1vh;
+        width: 100px;
+        height: 100px;
+    }
+    .ReadmoreAboutDiv{
+        text-align: center;
+        margin-top: -10vh;
+    }
+    .custMenu.nonhome{
+       display: none
+    }
+    .logoIllustration{
+        width: 150%;
+        height: 150%;
+        z-index: -1;
+        margin-left: -15vw;
+        margin-top: -20vh;
+    }
+    .aboutIllustration {
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        margin-top: -25vh;
+        margin-left: 9vw;
+        z-index: 0;
+    }
+
+    .archStyles {
+        height: 95%;
+        width: 85%;
+        margin-top: 10vh;
+        margin-left: 9vh;
+        z-index: -1;
+    }
+
+    .aboutText{
+        text-align: center;
+        line-height: 1.5;
+        margin-top: 50vh;
+    }
+    .counterDiv{
+        margin: 10vh 0 2vh 0 ;
+    }
+    .aboutDiv{
+        margin-top: 20vh;
+    }
+    .peopleIllustration{
+        position: absolute;
+        float: right;
+        height: 50%;
+        width: 100%;
+        margin-bottom: 2vh;
+        margin-top: -8vh;
+        z-index: -1;    }
+    .person.top{
+        text-align: center;
+        margin-left: 5vw;
+        margin-top: 40vh;
+    }
+    .person{
+        text-align: center;
+        margin-left: auto;
+    }
+    .pl{
+        margin-left: 10vw;
+    }
+    .pr{
+        margin-left: 20vw;
+    }
+    .morePeopleBtn {
+        position: absolute;
+        margin-left: 25vw;
+        margin-top: 20px;
+    }
+    /*Awards Text Left*/
+    .awardsText-tl.top {
+        padding: 10px;
+        width: 100%;
+        margin: 0 5vw 5vw 5vw;
+    }
+    .awardsIllustration-tl.top {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin: 5vh 5vw 5vw 5vw;
+    }
+    .awardsText-tl {
+        padding: 10px;
+        width: 100%;
+        margin: 30vh 5vw 5vw 5vw;
+    }
+    .awardsIllustration-tl {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin: 30vh 5vw 5vw 5vw;
+    }
+    /*Awards Text Right*/
+    .awardsText-tr {
+        padding: 10px;
+        width: 100%;
+        margin: 30vh 5vw 5vw 5vw;
+    }
+    .awardsIllustration-tr {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin: 50vh 5vw 5vw 5vw;
+    }
+    .acitivityIllustration{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        margin-top: -35vh;
+    }
+    .activityContainer{
+        margin-top: 25vh;
+    }
+    .galleryImage{
+        margin: 10px;
+    }
+    .moreGalleryBtn{
+        margin-left: 0vw;
+        margin-top: 5vh;
+    }
+    .contactudDiv{
+        margin-top: 30vh;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    
+    section#timeline:before{
+      background-color: #fff;
+    }
+
+    section#timeline article div.inner h2:after{
+      height: 0px;
+      width:0px;
+    }
+
+    .inner{
+      width: inherit;
+    }
+
+    section#timeline article div.inner span.date{
+      top:0;
+      left:0;
+    }
+    section#timeline article div.inner h2
+    {
+      margin-left: 25px;
+    }
+
+    section#timeline article div.inner{
+      width: inherit;
+    }
+
+  }
+
+
+ 
+.right
+{
+    float:right !important;
+}
+.right h2::after{
+    left:-5px !important;
+}
+section#timeline {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+}
+section#timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -1px;
+    width: 2px;
+    height: 100%;
+    background: #142a74;
+}
+section#timeline article {
+    width: 100%;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+section#timeline article:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+section#timeline article div.inner {
+    width: 40%;
+    float: left;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(190, 190, 190, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+section#timeline article div.inner span.date {
+    display: block;
+    width: 90px;
+    height: 90px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -45px;
+    border-radius: 100%;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #6363ff;
+    color: #fff;
+    border:5px solid #fff;
+}
+section#timeline article div.inner span.date span {
+    display: block;
+    text-align: center;
+}
+section#timeline article div.inner span.date span.day, span.year {
+    font-size: 10px;
+}
+section#timeline article div.inner span.date span.month {
+    font-size: 18px;
+}
+section#timeline article div.inner h2 {
+    padding: 15px;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+}
+section#timeline article div.inner h2:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(-45deg);
+}
+section#timeline article div.inner p {
+    padding: 25px;
+    margin: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #656565;
+    border-radius: 0 0 6px 6px;
+}
+.inner ,h2::after{
+    background-color: #5048af;
+}
+.imgLink{
+    width:50px;
+    background-color: #6159e5;
+    color:#fff;
+    padding:5px;
+    border-radius: 3px;
+}
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    .footer{
+      flex-direction: column;
+      font-size: 13px;
+      position: relative !important;
+      align-items: center;
+      width: 100%;
+      margin-left: 0 !important;
+      margin-top: 50vh;
+    }
+    .leftSide,.rightSide{
+      width: inherit !important;
+    }
+
+    section#timeline:before{
+      background-color: #fff;
+    }
+
+    section#timeline article div.inner h2:after{
+      height: 0px;
+      width:0px;
+    }
+
+    .inner{
+      width: inherit;
+    }
+
+    section#timeline article div.inner span.date{
+      top:0;
+      left:20px;
+    }
+    section#timeline article div.inner h2
+    {
+      margin-left: 55px;
+    }
+
+    section#timeline article div.inner{
+      width: inherit;
+    }
+
+  }
+
+

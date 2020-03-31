@@ -1,0 +1,217 @@
+ <div className="container-fluid">
+          <div className="row">
+              <div className="col-lg-12 mt-5 headerDiv" style={{fontFamily: "'Comfortaa', cursive", padding: "0px !important", background: `url(${gecImg}) no-repeat`, width: "100%", height: "80%", backgroundSize: "100% 100%", textAlign: "center"}}>
+                  <Particles style={{
+                      position: "absolute",
+                      left: "0",
+                      width:"100%",
+                      height: "100%"}} params={par}/>
+                  <img src={ieeeImg} />
+                  <h3> <strong>Goverment Engineering College</strong> </h3>
+                  <h3 style={{marginBottom: "100px"}}><strong>Thrissur</strong></h3>
+              </div>
+          </div>
+          <div>
+              <h1> Content Goes Here</h1>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+                  <nav className="menu">
+                      <input type="checkbox" href="#" className="menu-open" name="menu-open" id="menu-open" checked/>
+                      <label className="menu-open-button" htmlFor="menu-open" style={{visibility: "hidden"}}>
+                          {/*<span className="lines line-1"></span>*/}
+                          {/*<span className="lines line-2"></span>*/}
+                          {/*<span className="lines line-3"></span>*/}
+                      </label>
+
+                      <a href="#" className="menu-item blue"  onClick={this.handleClick} data-tag='award'>Awards</a>
+                      <a href="#" className="menu-item green" onClick={this.handleClick} data-tag='act'> Activities</a>
+                      <a href="#" className="menu-item red" onClick={this.handleClick} data-tag='exe'> Execom </a>
+                      <a href="#" className="menu-item purple" onClick={this.handleClick} data-tag='about'> About </a>
+                      <a href="#" className="menu-item orange" onClick={this.handleClick} data-tag='contact'> Connect Us </a>
+                      <a href="#" className="menu-item lightblue" onClick={this.handleClick} data-tag='gallery'> Gallery </a>
+                  </nav>
+
+
+
+
+                <div className="row">
+                    <h1 className="IEEESans m-5" style={{color: "#fff"}}>Government Engineering Collerge, Thrissur</h1>
+                </div>
+                <div className="row m-5">
+                    <div className="col-lg-3 custMenu" onClick={this.handleClick} data-tag='gallery' >Gallery</div>
+                    <div className="col-lg-3 custMenu" onClick={this.handleClick} data-tag='execom'>Execom</div>
+                    <div className="col-lg-3 custMenu" onClick={this.handleClick} data-tag='act'>Activities</div>
+                    <div className="col-lg-3 custMenu" onClick={this.handleClick} data-tag='award'>Awards</div>
+                </div>
+
+
+
+
+
+/* Awards CSS */
+.awardSection {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4em;
+}
+
+/*  COLUMN SETUP  */
+.awardCol {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.awardCol:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.awardGroup:before,
+.awardGroup:after { content:""; display:table; }
+.awardGroup:after { clear:both;}
+.awardGroup { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+    width: 100%;
+}
+.span_1_of_2 {
+    width: 49.2%;
+    margin : 10em auto;
+}
+awardImg.img{
+    max-width: 570px;
+}
+.pure-g {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .pure-g {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .pure-g {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .pure-g {
+        width: 1170px;
+    }
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .awardCol {
+        margin: 1% 0 1% 0%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+@media only screen and (max-width: 480px){
+    .awardflexbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_1 {
+        order: 2;
+    }
+
+    awardImg.img{
+        max-width: 95%;
+    }
+    .pure-g{
+        overflow: hidden;
+    }
+}
+
+
+            <div className="pure-g">
+                <div className="awardSection awardGroup">
+                    <div className="awardCol span_1_of_2" style={{textAlign : 'center' , marginTop : '2vh'}}>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div className="awardCol span_1_of_2">
+                        <img className="awardImg" src={winnerImg} alt=""/>
+                    </div>
+                </div>
+
+                <div className="awardSection awardGroup awardflexbox">
+                    <div className="awardCol span_1_of_2 item_1">
+                        <img className="awardImg" src={giftImg} alt=""/>
+                    </div>
+                    <div className="awardCol span_1_of_2 item_2" style={{textAlign : 'center',marginTop : '5em'}}>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad qui consectetur numquam totam sint, nihil ex alias maxime fugiat distinctio in! Eligendi ducimus saepe libero dicta facilis dolor veniam distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perspiciatis quod quas itaque doloremque autem commodi delectus nulla quasi atque consequuntur dolor alias earum odit tempore porro, minus cum quibusdam.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="awardSection awardGroup">
+                    <div className="awardCol span_1_of_2" style={{textAlign : 'center',marginTop : '5em'}}>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eaque inventore repudiandae numquam error beatae excepturi rerum, similique adipisci ipsa saepe ea obcaecati laudantium, eveniet minus itaque deserunt natus omnis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi tempore iure quisquam ducimus recusandae, alias distinctio quae nemo ipsa blanditiis facilis velit mollitia dolores voluptatem qui necessitatibus repellat. Totam?
+                        </p>
+                    </div>
+                    <div className="awardCol span_1_of_2">
+                        <img className="awardImg" src={finishlineImg} alt=""/>
+                    </div>
+                </div>
+            </div>
+
+
+
+{/* <div className="row mobViewExecome">
+                    <div className="person top pl">
+                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{ borderRadius: "100%", marginLeft: "30px" }} />
+                        <h5 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }}>Vishnu S</h5>
+                        <h6 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }} className="text-muted">Chairman</h6>
+                    </div>
+                    <div className="person pr">
+                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{ borderRadius: "100%" }} />
+                        <h5 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }}>Anna Rose MB</h5>
+                        <h6 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }} className="text-muted">Secretary</h6>
+                    </div>
+                </div> */}
+                {/* <div className="row mobViewExecome" style={{ marginLeft: "0.4vw" }}>
+                    <div className="person pl">
+                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{ borderRadius: "100%", marginLeft: "30px" }} />
+                        <h5 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }}>Ganesh</h5>
+                    </div>
+                    <div className="person pr">
+                        <img src={defaultManImg} alt="member" width="150px" height="150px" style={{ borderRadius: "100%" }} />
+                        <h5 style={{ fontFamily: `'Montserrat', sans-serif`, marginTop: "5px" }}>Abijith</h5>
+                    </div>
+                </div> */}
+
+
+
+
+
+
+                
